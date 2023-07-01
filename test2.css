@@ -1,0 +1,132 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+#main-menu {
+    position: sticky;
+    top: 0;
+}
+
+.parent-menu {
+  overflow: hidden;
+  background-color: black;
+  font-family: 'Montserrat', sans-serif;
+  /* position: sticky; */
+  top: 0;
+  /* z-index: 1; */
+  text-transform: uppercase;
+  margin: auto;
+  /* width: 80vw; */
+  /* position: sticky; */
+
+}
+
+.parent-menu a {
+  float: left;
+  /* display:inline-block */
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.parent-menu a:hover {
+    text-decoration: underline;
+}
+
+/* 
+.sub-menu-caption {
+  float: left;
+  overflow: hidden;
+} */
+
+.sub-menu-caption {
+    float: left;
+    overflow: hidden;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(237, 13, 13);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  width: 11vw;
+
+  border-right-style: solid;
+  border-left-style: solid;
+  border-width: 0px, 1px, 0px, 1px;
+  border-color: rgb(255, 0, 0, 0.5);
+}
+
+.upper-menu a {
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-color: red;
+    z-index: 500;
+    
+  }
+
+.sub-menu {
+    float: left;
+    overflow: hidden;
+
+    border-color: #d71a1a;
+    border-style: solid;
+    border-width: 0 1px 1px 1px;
+    width: 11vw;
+
+    left: 10vw;
+    /* right: auto; */
+}
+
+.sub-menu {
+    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  color: aliceblue;
+  /* box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+  /* z-index: 2; */
+  /* padding-left: 0px;
+  margin-left: 0; */
+}
+
+.sub-menu a {
+  float: none;
+  color: rgb(255, 255, 255);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border-color: red;
+  border-style: solid;
+  border-bottom-width: 1px;
+
+  /* z-index: 3; */
+}
+
+.sub-menu a:hover {
+  background-color: rgb(206, 58, 58);
+}
+
+.sub-menu-caption:hover .sub-menu {
+  display: block;
+}
+
+.right-menu{
+    float: right;
+    background: rgb(255, 0, 0, 0.5);
+    border-width: 0;
+  }
